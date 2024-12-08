@@ -23,7 +23,8 @@ const tabValue=ref('Франция');
 <template>
   <Header></Header>
   <Hero/>
-  <Catalog/>
+  <p>{{ tabValue }}</p>
+  <Catalog :model="tabValue"/>
   <Promo/>
   <OurTeam/>
   <Footer></Footer>

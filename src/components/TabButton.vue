@@ -1,14 +1,7 @@
 <template>
-    <!-- <button class="w-max bg-primary-light rounded-3xl transition-all text-foreground 
-                    hover:bg-primary-dark-0 hover:text-background
-                    focus:bg-primary-light focus:border-primary-dark-0 focus:text-foreground
-                    active:bg-primary-dark-100 active:text-background">
-        <p class="mx-5 my-2.5">{{ label }}</p>
-    </button> -->
-
-    <div class="w-max hover:cursor-pointer">
-        <input class="peer appearance-none hidden" type="radio" :id="id" v-model="model" :value="value"/>
-        <label class="px-5 py-2.5  bg-primary-light rounded-[20px] transition-all text-foreground flex flex-row
+    <div class="hover:cursor-pointer flex h-[43px] w-[126px]">
+        <input class="peer appearance-none hidden" type="radio" :id="id" :v-model="model" :value="value"/>
+        <label class="bg-primary-light h-full self-center w-full rounded-[20px] transition-all text-foreground flex flex-row justify-center items-center
                     hover:bg-primary-dark-0 hover:text-background hover:cursor-pointer
                     focus:bg-primary-light focus:border-primary-dark-0 focus:text-foreground focus:border
                     active:bg-primary-dark-100 active:text-background
