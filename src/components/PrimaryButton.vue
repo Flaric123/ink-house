@@ -8,5 +8,6 @@
 </template>
 
 <script setup>
+    import Button from './Button.vue';
     const {value='Some value'}=defineProps(['value']);
 </script>
