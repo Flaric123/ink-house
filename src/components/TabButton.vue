@@ -14,7 +14,3 @@
     const model=defineModel()
     const {id='1',value}=defineProps(['id','value'])
 </script>
-
-<style lang="scss" scoped>
-
-</style>
