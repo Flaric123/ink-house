@@ -6,8 +6,8 @@
             <p class="text-[18px] text-foreground leading-[27px] text-left">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
             <div class="h-[80px] gap-[30px] w-max flex flex-row">
                 <Avatar src="../assets/person1.jpeg"/>
-                <Avatar src="../assets/person1.jpeg"/>
-                <Avatar src="../assets/person1.jpeg"/>
+                <Avatar src="../assets/person2.jpeg"/>
+                <Avatar src="../assets/person3.jpeg"/>
             </div>
         </div>
     </div>
