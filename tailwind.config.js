@@ -17,7 +17,11 @@ export default {
       'foreground':'#2C2D35',
       'foreground-detail':'#86928B',
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'promo-bg':"url(./src/assets/french-work.png",
+      }
+    },
   },
   plugins: [],
 }
