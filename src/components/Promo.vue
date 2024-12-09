@@ -1,5 +1,6 @@
 <template>
     <div class="work w-full h-[574px] mt-[70px] relative">
+        <div class="gradient w-full h-full absolute"></div>
         <div class="max-w-[1140px] w-full px-[15px] flex flex-col justify-self-center self-start absolute inset-0 mt-[70px] justify-items-start">
             <div class="flex flex-row w-[512px] h-[80px] gap-[20px]">
                 <img src="../assets/gold-star.svg" class="w-[80px] h-[80px]"/>
@@ -23,6 +24,7 @@
 <style lang="css" scoped>
     .work::after{
         display: block;
+        position: absolute;
         content:'';
         width:100%;
         height:100%;
@@ -30,6 +32,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size:cover;
+        filter:contrast(120%);
+        z-index:-1;
     }
     .work::before{
         display:block;
@@ -39,7 +43,10 @@
         position:absolute;
         background-size:cover;
         background-image: url('../assets/texture.png');
-        background:linear-gradient(.25turn,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
-        filter: contrast(120%);
+        opacity: 0.7;
+    }
+    .gradient{
+        background:linear-gradient(.25turn,rgba(13, 43, 67, 0.8) 40%,rgba(13, 43, 67, 0) 70%);
+        filter:contrast(180%)
     }
 </style>

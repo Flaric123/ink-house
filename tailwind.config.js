@@ -17,10 +17,12 @@ export default {
       'foreground':'#2C2D35',
       'foreground-detail':'#86928B',
     },
+    screens:{
+      'tablet-690':'650px',
+      'tablet-510':'510px',
+      'mobile':'320px',
+    },
     extend: {
-      backgroundImage:{
-        'promo-bg':"url(./src/assets/french-work.png",
-      }
     },
   },
   plugins: [],
