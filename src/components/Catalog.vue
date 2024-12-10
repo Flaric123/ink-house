@@ -1,11 +1,12 @@
 <template>
+    <p>{{ tabValue }}</p>
     <div class="w-full flex flex-col max-w-[1140px] px-[15px] justify-self-center mt-[70px]">
         <div class="w-full flex flex-row justify-between">
             <p class="text-[40px] text-foreground">Репродукции</p>
             <div class="w-[428px] justify-between flex flex-row">
-                <TabButton value="Франция" :v-model="model"/>
-                <TabButton value="Германия" :v-model="model"/>
-                <TabButton value="Англия" :v-model="model"/>
+                <TabButton value="Франция" id="1" v-model="tabValue"/>
+                <TabButton value="Германия" id="2" v-model="tabValue"/>
+                <TabButton value="Англия" id="3" v-model="tabValue"/>
             </div>
         </div>
         <div class="grid grid-cols-3 gap-[30px] mt-[30px]">
@@ -22,6 +23,7 @@
 <script setup>
     import CardArt from './CardArt.vue';
     import TabButton from './TabButton.vue';
+    import { ref } from 'vue';
 
-    const {model}=defineProps(['model'])
+    const tabValue=ref('');
 </script>

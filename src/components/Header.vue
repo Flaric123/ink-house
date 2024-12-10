@@ -1,6 +1,8 @@
 <template>
-    <div class="w-full h-[100px] flex flex-row bg-primary-light justify-center sticky">
-        <div class="flex flex-row justify-between max-w-[1140px] w-full px-[15px]">
+    <div class="w-screen min-w-full flex flex-row bg-primary-light justify-center
+    desktop:h-[100px]
+    tablet-690:h-[100px]">
+        <div class="flex flex-row justify-between max-w-[1140px] w-full desktop:px-[15px]">
             <div class="flex flex-row gap-x-[8px] h-max self-center">
                 <img class="w-[35px] h-[35px]" src="../assets/favicon.svg"/>
                 <p class="font-bold text-primary-dark-100 self-center">Ink. House</p>

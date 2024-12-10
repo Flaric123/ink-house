@@ -1,7 +1,5 @@
 <template>
-    <button class="media w-max h-max transition-all rounded-[2px]" v-html="src">
-
-    </button>
+    <button class="media w-max h-max transition-all rounded-[2px] outline-none" v-html="src"></button>
 </template>
 
 <script setup>
