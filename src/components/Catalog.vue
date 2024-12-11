@@ -1,15 +1,20 @@
 <template>
-    <p>{{ tabValue }}</p>
-    <div class="w-full flex flex-col max-w-[1140px] px-[15px] justify-self-center mt-[70px]">
+    <div class="w-full flex flex-col max-w-[1140px] justify-self-center mt-[70px]
+    desktop:px-[15px]
+    tablet-690:px-[39px]">
         <div class="w-full flex flex-row justify-between">
-            <p class="text-[40px] text-foreground">Репродукции</p>
+            <p class="text-foreground
+            desktop:text-[40px]
+            tablet-690:text-[30px]">Репродукции</p>
             <div class="w-[428px] justify-between flex flex-row">
                 <TabButton value="Франция" id="1" v-model="tabValue"/>
                 <TabButton value="Германия" id="2" v-model="tabValue"/>
                 <TabButton value="Англия" id="3" v-model="tabValue"/>
             </div>
         </div>
-        <div class="grid grid-cols-3 gap-[30px] mt-[30px]">
+        <div class="grid gap-[30px] mt-[30px]
+        desktop:grid-cols-3
+        tablet-690:grid-cols-2">
             <CardArt/>
             <CardArt/>
             <CardArt/>

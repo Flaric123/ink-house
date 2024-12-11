@@ -18,9 +18,9 @@ export default {
       'foreground-detail':'#86928B',
     },
     screens:{
-      'desktop':'690px',
-      'tablet-690':'510px',
-      'tablet-510':'320px',
+      'desktop':'768px',
+      'tablet-690':'576px',
+      'tablet-510':'340px',
       'mobile':'0px',
     },
     extend: {
